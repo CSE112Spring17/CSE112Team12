@@ -34,4 +34,3 @@ From GCP Shell
 - gcloud app deploy --project <project_name>
 - gets deployed to https://cse112team12.appspot.com/
 
-Just a test
