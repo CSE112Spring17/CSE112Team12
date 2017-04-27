@@ -4,6 +4,9 @@
   "description": "Node application with Mocha/Enzyme",
   "main": "index.js",
   "engine": "node >= 4.2.1",
+  "babel": {
+    "presets": [ "es2015" ]
+  }, 
   "directories": {
     "test": "test"
   },
