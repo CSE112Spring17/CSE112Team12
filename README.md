@@ -10,11 +10,11 @@ npm install
 ```
 
 ### Viewing Application
---
+
 * Running `npm start` will have your application listen on localhost:3000
 
 ### Development Flow
---
+
 * Checkout `Dev` Branch
 
 ```
@@ -43,7 +43,7 @@ git push
 	* Once Integration Tests to pass on codeship and a thumbs up is received from another team member in the commments merge your branch into Dev and Delete your branch (Github provides all this functionality from the pull request page)
 
 ### Testing Flow
---
+
 #### Writing Tests
 * Add tests to CSE112Team12/test/test.js
 * Will soon refractor to allow for encapsulated testing
@@ -52,7 +52,7 @@ git push
 * `npm test`
 
 ### Deployment Flow
---
+
 * Using `Google Compute Engine` with `ngninx`
 * Dev Host: `104.199.112.182`
 * Production Host: `35.185.212.97`
@@ -60,14 +60,14 @@ git push
 * On Saturdays we will Merge the Dev Branch into Master and deploy to production Host
 
 ### Tips
---
+
 * When developing locally running `npm run bundle` in one terminal and `npm run dev` will allow your changes to show up on localhost:3000 as you develop
 
 ### Usage 
---
-### IsValidPhoneNumber()
+
+#### IsValidPhoneNumber()
 This function checks if the input value is a correctly entered phone number.
 The user will input a string, if it is a valid phone number, it will return "The phone number is valid". If not, it will return "The phone number is invalid".
 
-### SetFormat()
+#### SetFormat()
 The user can set the accepting phone format by inputting an example. The format will be used for IsValidPhoneNumber().
