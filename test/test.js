@@ -62,6 +62,4 @@ describe('Checking set Format', function(){
 			phone.isValidPhoneNumber("858.900.8888").should.equal(false);
 		});
 	});
-
-	
 });
