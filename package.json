@@ -11,7 +11,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --use_strict --harmony",
+    "test": "mocha --use_strict --harmony --compilers js:babel-core/register",
     "start": "node --use_strict index.js",
     "dev": "nodemon --use_strict index.js",
     "bundle": "webpack"
