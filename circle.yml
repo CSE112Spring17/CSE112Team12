@@ -11,4 +11,4 @@ deployment:
   staging:
     branch: circleci
     commands:
-      - ssh -i ~/.ssh/exeggcute justin8chou@35.185.212.97
+      - ssh $GCLOUD_DEV_CREDENTIALS 'cd /home/sehajimi/CSE112Team12 && git pull && npm test'
