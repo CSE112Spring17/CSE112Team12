@@ -9,6 +9,6 @@ dependencies:
 
 deployment:
   staging:
-    branch: circleci
+    branch: Dev
     commands:
       - ssh $GCLOUD_DEV_CREDENTIALS 'cd /home/justin8chou/CSE112Team12 && git pull && npm install && npm test'
