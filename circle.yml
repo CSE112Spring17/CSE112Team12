@@ -5,9 +5,11 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update
     - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $GCLOUD_PROJECT_ID
+    - sudo /opt/google-cloud-sdk/bin/gcloud config set compute/zone $GCLOUD_INSTANCE_ZONE
 
 deployment:
   staging:
     branch: circleci
     commands:
-      - sudo /opt/google-cloud-sdk/bin/gcloud compute copy-files ./dist exeggcute:/tmp/
+      - sudo /opt/google-cloud-sdk/bin/gcloud compute copy-files ./CSE112Team12/client exeggcute:/home/justin8chou/CSE112Team12/ --quiet
+      - sudo /opt/google-cloud-sdk/bin/gcloud compute ssh exeggcute -- 'cd /home/justin8chou/CSE112Team12 && npm install && npm test'
