@@ -12,5 +12,5 @@ deployment:
   staging:
     branch: circleci
     commands:
-      - sudo /opt/google-cloud-sdk/bin/gcloud compute copy-files ./CSE112Team12/client exeggcute:/home/justin8chou/CSE112Team12/ --quiet
+      - sudo /opt/google-cloud-sdk/bin/gcloud compute copy-files ./CSE112Team12/client root@exeggcute:/home/justin8chou/CSE112Team12/ --quiet
       - sudo /opt/google-cloud-sdk/bin/gcloud compute ssh exeggcute -- 'cd /home/justin8chou/CSE112Team12 && npm install && npm test'
