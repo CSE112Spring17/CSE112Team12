@@ -1,5 +1,8 @@
 "use strict";
 
+  /**
+   * Main class for the phone function
+   */
 class Phone {
 
   /**
@@ -52,4 +55,7 @@ class Phone {
 
 }
 
+/**
+ * Export phone module.
+ */
 module.exports = Phone;
