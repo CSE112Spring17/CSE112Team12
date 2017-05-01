@@ -58,6 +58,7 @@ git push
 * Production Host: `35.185.212.97`
 * On Fridays we will deploy the Dev Branch to the Dev Host (might change to automatic deployment)
 * On Saturdays we will Merge the Dev Branch into Master and deploy to production Host
+* When we push to the Dev branch, if all tests are passing, it will be deployed to the Dev server.
 
 ### Tips
 
