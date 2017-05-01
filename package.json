@@ -37,6 +37,7 @@
     "esdoc": "^0.5.2",
     "jshint": "^2.9.4",
     "mocha": "^3.2.0",
+    "nightwatch": "^0.9.14",
     "nodemon": "^1.11.0",
     "should": "^11.2.1",
     "webpack": "^1.14.0"
