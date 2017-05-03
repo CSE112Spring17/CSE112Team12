@@ -375,6 +375,10 @@
 	process.removeListener = noop;
 	process.removeAllListeners = noop;
 	process.emit = noop;
+	process.prependListener = noop;
+	process.prependOnceListener = noop;
+
+	process.listeners = function (name) { return [] }
 
 	process.binding = function (name) {
 	    throw new Error('process.binding is not supported');
@@ -35527,6 +35531,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/**
+	 * Name: routes
+	 * 
+	 */
 	var routes = {
 	  // base component (wrapper for the whole application).
 	  component: _Base2.default,
@@ -43445,7 +43453,11 @@
 /* 467 */
 /***/ (function(module, exports) {
 
-	
+	"use strict";
+
+	  /**
+	   * Main class for the phone function
+	   */
 	class Phone {
 
 	  /**
@@ -43498,6 +43510,9 @@
 
 	}
 
+	/**
+	 * Export phone module.
+	 */
 	module.exports = Phone;
 
 /***/ })
