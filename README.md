@@ -11,7 +11,7 @@ npm install
 
 ### Viewing Application
 
-* Running `npm start` will have your application listen on localhost:3000
+* Running `npm start` will have your application listen on localhost:8080
 
 ### Development Flow
 
