@@ -17,7 +17,7 @@
     "start": "node --use_strict index.js",
     "dev": "nodemon --use_strict index.js",
     "bundle": "webpack",
-    "jshint": "jshint -c .jshintrc . || true"
+    "jshint": "jshint -c .jshintrc ."
   },
   "pre-commit": [
     "jshint"

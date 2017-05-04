@@ -27,6 +27,7 @@
   "white"         : true,
   "predef"        : [
     "describe",
-    "context"
+    "context",
+    "it"
   ]
 }
