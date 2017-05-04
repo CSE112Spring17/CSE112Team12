@@ -16,8 +16,12 @@
     "test": "mocha --use_strict --harmony",
     "start": "node --use_strict index.js",
     "dev": "nodemon --use_strict index.js",
-    "bundle": "webpack"
+    "bundle": "webpack",
+    "jshint": "jshint -c .jshintrc . || true"
   },
+  "pre-commit": [
+    "jshint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/safarsi/CSE112Team12.git"
@@ -39,6 +43,7 @@
     "mocha": "^3.2.0",
     "nightwatch": "^0.9.14",
     "nodemon": "^1.11.0",
+    "pre-commit": "^1.2.2",
     "should": "^11.2.1",
     "webpack": "^1.14.0"
   },

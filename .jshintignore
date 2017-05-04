@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+pm2config.json
+client/dist/js/app.js
+doc/

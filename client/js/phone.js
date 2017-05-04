@@ -19,7 +19,9 @@ class Phone {
    */
    isValidPhoneNumber(strNumToCheck) {
     var matches = strNumToCheck.match(this.re);
-    if(!matches) return false;
+    if(!matches) {
+      return false;
+    }
     return ((matches.length === 1 && matches[0] === strNumToCheck) ? true : false);
   }
 
