@@ -6,6 +6,7 @@ var app = express();
 // tell the app to look for static files in these directories
 app.use(express.static('./server/static/'));
 app.use(express.static('./client/dist/'));
+app.use('/doc', express.static('./doc/'))
 
 
 // all environments
