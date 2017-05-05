@@ -17,7 +17,8 @@
     "start": "node --use_strict index.js",
     "dev": "nodemon --use_strict index.js",
     "bundle": "webpack",
-    "jshint": "jshint -c .jshintrc ."
+    "jshint": "jshint -c .jshintrc .",
+    "esdoc" : "esdoc"
   },
   "pre-commit": [
     "jshint"
