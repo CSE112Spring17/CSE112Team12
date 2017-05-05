@@ -29,7 +29,7 @@ const PhoneForm = ({
       </div>
 
       <div className="button-line">
-        <RaisedButton type="button" onClick={onClickSF} label="Set Format" primary />
+        <RaisedButton id="formatbtn" type="button" onClick={onClickSF} label="Set Format" primary />
       </div>
 
       <div className="field-line">
@@ -44,7 +44,7 @@ const PhoneForm = ({
       </div>
 
       <div className="button-line">
-        <RaisedButton type="button" onClick={onClickVF} label="Check" primary />
+        <RaisedButton id="phoneNoBtn" type="button" onClick={onClickVF} label="Check" primary />
       </div>
 
     </form>
