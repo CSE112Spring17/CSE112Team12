@@ -3,3 +3,4 @@ node_modules/
 pm2config.json
 client/dist/js/app.js
 doc/
+coverage/

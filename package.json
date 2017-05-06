@@ -13,12 +13,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --use_strict --harmony",
+    "test": "nyc --reporter=html mocha --use_strict --harmony",
     "start": "node --use_strict index.js",
     "dev": "nodemon --use_strict index.js",
-    "bundle": "webpack",
+    "bundle-prod": "webpack -p",
+    "bundle-dev": "webpack -d --watch",
     "jshint": "jshint -c .jshintrc .",
-    "esdoc" : "esdoc"
+    "esdoc": "esdoc"
   },
   "pre-commit": [
     "jshint"
@@ -44,6 +45,7 @@
     "mocha": "^3.2.0",
     "nightwatch": "^0.9.14",
     "nodemon": "^1.11.0",
+    "nyc": "^10.3.2",
     "pre-commit": "^1.2.2",
     "should": "^11.2.1",
     "webpack": "^1.14.0"
