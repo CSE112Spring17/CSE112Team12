@@ -19,6 +19,10 @@ module.exports = {
   },
   "test_settings": {
     "default": {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
       "screenshots": {
         "enabled": true, // if you want to keep screenshots
         "path": './screenshots' // save screenshots here
@@ -27,11 +31,7 @@ module.exports = {
         "waitForConditionTimeout": 5000 // sometimes internet is slow so wait.
       },
       "desiredCapabilities": { // use Chrome as the default browser for tests
-        "browserName" : "phantomjs",
-        "javascriptEnabled" : true,
-        "acceptSslCerts" : true,
-        "phantomjs.binary.path" : "./phantomjs/bin/phantomjs",
-        "phantomjs.cli.args" : []
+        "browserName": "chrome"
       }
     },
     "chrome": {

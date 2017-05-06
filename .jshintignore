@@ -5,4 +5,3 @@ client/dist/js/app.js
 doc/
 coverage/
 nightwatch.conf.BASIC.js
-phantomjs/

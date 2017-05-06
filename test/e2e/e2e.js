@@ -20,6 +20,7 @@ module.exports = {
       .acceptAlert()
 
       .clearValue('input[name=phoneNumber]')
+      .pause(500)
       .setValue('input[name=phoneNumber]','000.000.0000')
       .assert.visible('input[value="000.000.0000"]')
       .click('button[id=phoneNoBtn]')	
@@ -27,6 +28,7 @@ module.exports = {
       .acceptAlert()
       
       .clearValue('input[name=format]')
+      .pause(500)
       .setValue('input[name=format]', '0000000000')
       .assert.visible('input[value="0000000000"]')
       .click('button[id=formatbtn]')
@@ -34,6 +36,7 @@ module.exports = {
       .acceptAlert()
 
       .clearValue('input[name=phoneNumber]')
+      .pause(500)
       .setValue('input[name=phoneNumber]','6666666666')
       .assert.visible('input[value="6666666666"]')
       .click('button[id=phoneNoBtn]')	
