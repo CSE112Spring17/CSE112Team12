@@ -6,3 +6,6 @@ doc/
 .nyc_output/
 coverage/
 client/dist/
+screenshots/
+reports/
+selenium-debug.log
