@@ -20,8 +20,14 @@ dependencies:
     - sudo apt-get update
     - sudo apt-get --only-upgrade install google-chrome-stable
     - google-chrome --version
-    
+
 test:
+  pre:
+    - php -S 127.0.0.1:8000:
+        background: true
+    - phantomjs --webdriver=4444:
+        background: true
+
   override:
     - npm test
     - npm run config
