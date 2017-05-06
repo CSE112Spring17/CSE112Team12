@@ -7,6 +7,12 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $GCLOUD_PROJECT_ID
     - sudo /opt/google-cloud-sdk/bin/gcloud config set compute/zone $GCLOUD_INSTANCE_ZONE
 
+test:
+  override:
+    - npm test
+    - npm run config
+    - npm run e2e
+
 general:
   artifacts:
     - ./coverage
