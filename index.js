@@ -7,7 +7,7 @@ var app = express();
 app.use(express.static('./server/static/'));
 app.use(express.static('./client/dist/'));
 app.use('/doc', express.static('./doc/'))
-
+app.use('/coverage',express.static('./coverage/'));
 
 // all environments
 app.set('port', process.env.PORT || 8080);

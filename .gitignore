@@ -2,3 +2,7 @@ node_modules/
 .DS_Store
 pm2config.json
 doc/
+.idea/
+.nyc_output/
+coverage/
+client/dist/
