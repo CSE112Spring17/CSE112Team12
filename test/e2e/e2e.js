@@ -4,6 +4,7 @@ module.exports = {
       .url('http://104.199.112.182/')
       .waitForElementVisible('body',1000)
       .assert.title('Phone Number Verification')
+      .pause(3000)
       .assert.visible('input[type=text]')
       .assert.visible('input[name=format]')
       .setValue('input[name=format]', '000-000-0000')
