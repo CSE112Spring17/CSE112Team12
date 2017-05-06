@@ -19,9 +19,7 @@ class Phone {
    */
    isValidPhoneNumber(strNumToCheck) {
     var matches = strNumToCheck.match(this.re);
-    if(!matches) {
-      return false;
-    }
+    if(!matches) return false;
     return ((matches.length === 1 && matches[0] === strNumToCheck) ? true : false);
   }
 
@@ -31,7 +29,7 @@ class Phone {
    *        for valid phone numbers)
    * @return undefined (nothing)
    */
-  setFormat(strNewRegex) {
+  setFormat(strNewRegex)) {
     this.re = new RegExp(String.raw`${strNewRegex}`);
   }
 
