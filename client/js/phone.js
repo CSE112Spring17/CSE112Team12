@@ -29,7 +29,7 @@ class Phone {
    *        for valid phone numbers)
    * @return undefined (nothing)
    */
-  setFormat(strNewRegex)) {
+  setFormat(strNewRegex) {
     this.re = new RegExp(String.raw`${strNewRegex}`);
   }
 
