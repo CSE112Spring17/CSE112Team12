@@ -16,6 +16,7 @@
     "test": "nyc --reporter=html mocha --use_strict --harmony",
     "start": "node --use_strict index.js",
     "dev": "nodemon --use_strict index.js",
+    "bundle": "webpack",
     "bundle-prod": "webpack -p",
     "bundle-dev": "webpack -d --watch",
     "jshint": "jshint -c .jshintrc .",
